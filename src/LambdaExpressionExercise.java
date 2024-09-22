@@ -48,10 +48,11 @@ public class LambdaExpressionExercise {
              *
              */
 
-            Predicate<String> isEmpty = String::isEmpty;
-                System.out.println("Is empty ? " +  isEmpty.test(""));
-                System.out.println("Is 'hello world' empty ?" + isEmpty.test("hello world"));
+            Function<String, Boolean> isEmpty = str -> str == null || str.isEmpty();
 
+            System.out.println("Is empty? " + isEmpty.apply(""));
+            System.out.println("Is 'hello world' empty? " + isEmpty.apply("hello world"));
+        
             /**
              * Exercise 5:
              *
