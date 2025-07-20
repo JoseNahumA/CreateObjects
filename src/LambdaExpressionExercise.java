@@ -52,7 +52,7 @@ public class LambdaExpressionExercise {
 
             System.out.println("Is empty? " + isEmpty.apply(""));
             System.out.println("Is 'hello world' empty? " + isEmpty.apply("hello world"));
-        
+
             /**
              * Exercise 5:
              *
